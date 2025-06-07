@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notre mariage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('photos/photo-maries.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      background-color: #ffffffcc;
+      color: #333;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Bienvenue sur notre page</h1>
+    <button onclick="window.location.href='album.html'">Revivez notre journée</button>
+    <audio autoplay loop>
+      <source src="audio/hatik-eternel.mp3" type="audio/mpeg" />
+      Votre navigateur ne supporte pas l’audio.
+    </audio>
+  </div>
+</body>
+</html>
